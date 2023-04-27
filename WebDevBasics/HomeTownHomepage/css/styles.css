@@ -33,3 +33,13 @@ body {
 #hero-subtitle {
   font-style: italic;
 }
+
+/* CARDS SECTION */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
