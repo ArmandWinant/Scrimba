@@ -36,13 +36,14 @@ body {
 
 .section-header {
   text-align: center;
-  padding: 100px 0 70px;
+  padding: 90px 0 60px;
 }
 
 .section-title {
   text-transform: uppercase;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 32px;
+  line-height: 48px;
 }
 
 /* CARDS SECTION */
@@ -83,6 +84,49 @@ body {
 }
 
 .card-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ECB CARD */
+#ecb-container {
+  display: flex;
+  gap: 3vw;
+  max-width: 650px;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0, .2);
+  border-radius: 1vw;
+  padding: 1vw;
+}
+
+#ecb-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#ecb-img {
+  max-width: 100%;
+  object-fit: cover;
+  max-width: 300px;
+  border-radius: .5vw 0 0 .5vw;
+}
+
+#ecb-title {
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.ecb-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   line-height: 25px;
