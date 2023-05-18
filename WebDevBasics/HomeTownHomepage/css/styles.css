@@ -1,5 +1,5 @@
 .black-border {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -16,10 +16,10 @@
 }
 
 :root {
-  --solid-blue: #07B3FF;
-  --faded-blue: #6DB6B1;
-  --off-white: #F5F5F5;
-  --pink: #E1596D;
+  --solid-blue: #A8DADC;
+  --faded-blue: #457B9D;
+  --off-white: #F1FAEE;
+  --red: #E63946;
 }
 
 body {
@@ -77,14 +77,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0;
+  padding: 100px 0 60px 0;
 }
 
 .section-title {
   text-transform: capitalize;
-  background-color: var(--pink);
+  background-color: var(--red);
   color: white;
-  padding: 5px;
+  padding: 5px 10px;
   width: 100%;
   border-radius: 5px;
   text-align: center;
@@ -123,8 +123,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 20px 25px 50px 10px;
+  padding: 20px 35px 50px 10px;
   position: relative;
+
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .card-category {
@@ -147,8 +150,28 @@ section {
 
 /* ECB INFO */
 #ecb-info {
-  background-color: #07B3FF11;
+  color: white;
+  background-color: var(--faded-blue);
   border-radius: 10px;
+  padding: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#ecb-info h3, #ecb-info p {
+  padding: 0 5vw;
+}
+
+#ecb-info p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#ecb-img-container {
+  margin: 30px 0;
+  padding: 0;
 }
 
 #ecb-img {
@@ -159,7 +182,9 @@ section {
   object-position: center center;
 }
 
-#ecb-caption {}
+#ecb-caption {
+  padding: 0 5vw;
+}
 
 @media (min-width: 576px) {
   #title {
@@ -172,5 +197,9 @@ section {
 
   .section-title {
     max-width: 220px;
+  }
+
+  #ecb-img {
+    padding: 0 5vw;
   }
 }
