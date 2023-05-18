@@ -32,7 +32,6 @@ body {
 }
 
 .serif-text {
-  /* font-family: 'Noto Serif JP', serif; */
   font-family: 'Cardo', serif;
 }
 
@@ -158,6 +157,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 40px;
 }
 
 #ecb-info h3, #ecb-info p {
