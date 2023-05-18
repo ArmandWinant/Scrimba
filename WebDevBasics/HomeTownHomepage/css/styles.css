@@ -31,6 +31,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.serif-text {
+  /* font-family: 'Noto Serif JP', serif; */
+  font-family: 'Cardo', serif;
+}
+
 /* HEADER */
 #main-header {
   background-image: url("https://images.unsplash.com/photo-1577185816322-21f2a92b1342?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format");
