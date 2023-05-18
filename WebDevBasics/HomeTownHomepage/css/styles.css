@@ -27,8 +27,12 @@ body {
   background-color: #F5F5F5;
 }
 
+.sans-serif-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* HEADER */
-header {
+#main-header {
   background-image: url("https://images.unsplash.com/photo-1577185816322-21f2a92b1342?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format");
   background-size: cover;
   background-position: center center;
@@ -42,7 +46,6 @@ header {
 
   padding: 0 32px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #title {
@@ -61,11 +64,29 @@ header {
   width: 85vw;
 }
 
-/* CARDS */
-#cards {
+section {
   padding: 0 calc((100vw - 85vw) / 2);
 }
 
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.section-title {
+  text-transform: capitalize;
+  background-color: var(--pink);
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* CARDS */
 #cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -78,6 +99,8 @@ header {
 
   background-color: white;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+  margin: 0 0 0 10px;
 }
 
 .card-img {
@@ -113,7 +136,25 @@ header {
 
   background-color: var(--solid-blue);
   color: white;
+
+  font-size: 14px;
 }
+
+/* ECB INFO */
+#ecb-info {
+  background-color: #07B3FF11;
+  border-radius: 10px;
+}
+
+#ecb-img {
+  width: 100%;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#ecb-caption {}
 
 @media (min-width: 576px) {
   #title {
@@ -122,5 +163,9 @@ header {
 
   #subtitle {
     width: 450px;
+  }
+
+  .section-title {
+    max-width: 220px;
   }
 }
