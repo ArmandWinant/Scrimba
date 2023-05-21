@@ -1,0 +1,48 @@
+.black-border {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.bbox {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B244A;
+  margin: 0;
+}
+
+#container {
+  margin: auto;
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.score-box {
+  flex: 1 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team {
+  text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  #container {
+    flex-direction: row;
+  }
+}
