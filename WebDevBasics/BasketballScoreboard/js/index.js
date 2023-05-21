@@ -6,23 +6,9 @@ function initializeScores() {
   }
 }
 
-// function addOne(element) {
-//   let scoreEl = element.parentElement.previousElementSibling;
-//   scoreEl.textContent = parseInt(scoreEl.textContent) + 1;
+function increaseScore(element) {
+  let points = parseInt(element.textContent);
 
-// }
-
-// function addTwo(element) {
-//   let scoreEl = element.parentElement.previousElementSibling;
-//   scoreEl.textContent = parseInt(scoreEl.textContent) + 1;
-// }
-
-// function addThree(element) {
-//   console.log(element)
-// }
-
-
-function increaseScore(element, points) {
   let scoreEl = element.parentElement.previousElementSibling;
   scoreEl.textContent = parseInt(scoreEl.textContent) + points;
 }
