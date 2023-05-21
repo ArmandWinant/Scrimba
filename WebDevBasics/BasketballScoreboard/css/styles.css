@@ -95,7 +95,7 @@ body {
 @media (min-width: 576px) {
   #container {
     flex-direction: row;
-    margin: 40px auto;
+    margin: 60px auto;
   }
 
   #left-score {
