@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="container" class="black-border">
-      <div id="left-score" class="score-box black-border">
+    <div id="container" class="bbox">
+      <div id="left-score" class="score-box bbox">
         <h2 class="team no-margin">home</h2>
         <span class="score"></span>
         <div class="buttons">
@@ -18,13 +18,13 @@
           <button class="btn" onclick="increaseScore(this)">+3</button>
         </div>
       </div>
-      <div id="right-score" class="score-box black-border">
+      <div id="right-score" class="score-box">
         <h2 class="team no-margin">guest</h2>
         <span class="score"></span>
         <div class="buttons">
-          <button class="btn" onclick="increaseScore(this)">+1</button>
-          <button class="btn" onclick="increaseScore(this)">+2</button>
-          <button class="btn" onclick="increaseScore(this)">+3</button>
+          <button class="btn bbox" onclick="increaseScore(this)">+1</button>
+          <button class="btn bbox" onclick="increaseScore(this)">+2</button>
+          <button class="btn bbox" onclick="increaseScore(this)">+3</button>
         </div>
       </div>
     </div>

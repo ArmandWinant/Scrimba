@@ -8,8 +8,8 @@ function initializeScores() {
 
 function increaseScore(element) {
   let points = parseInt(element.textContent);
-
   let scoreEl = element.parentElement.previousElementSibling;
+  
   scoreEl.textContent = parseInt(scoreEl.textContent) + points;
 }
 
