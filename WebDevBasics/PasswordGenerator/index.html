@@ -2,10 +2,30 @@
 <html>
   <head>
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    
+    <main id="container" class="bbox black-border">
+      <header>
+        <h1 id="title" class="no-margin">Generate a <span>random password</span></h1>
+        <h2 id="subtitle" class="no-margin">Never use an insecure password again</h2>
+      </header>
+      <section>
+        <button id="btn">Generate passwords</button>
+        <hr>
+        <div id="password-fields">
+          <div class="password-field bbox black-border">
+            <p class="password no-margin"></p>
+            <i class="fa-regular fa-copy"></i>
+          </div>
+          <div class="password-field bbox black-border">
+            <p class="password no-margin black-border"></p>
+            <i class="fa-regular fa-copy"></i>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
