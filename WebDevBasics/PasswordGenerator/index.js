@@ -24,3 +24,32 @@ function generatePasswords() {
     passwordEls[i].textContent = newPassword(15);
   }
 }
+
+function copyPassWord(element) {
+  navigator.clipboard.writeText(element.textContent);
+}
+
+let darkMode = true;
+
+function toggleColors() {
+  darkMode = !darkMode;
+
+  let r = document.querySelector(":root");
+  if (darkMode) {
+    r.style.setProperty('--bg-color', '#1F2937');
+    r.style.setProperty('--title-color', '#FFFFFF');
+    r.style.setProperty('--title-green', '#4ADF86');
+    r.style.setProperty('--subtitle-grey', '#D5D4D8');
+    r.style.setProperty('--btn-green', '#10B981');
+    r.style.setProperty('--hr-color', '#2F3E53');
+    r.style.setProperty('--password-green', '#55F991');
+  } else {
+    r.style.setProperty('--bg-color', '#ECFDF5');
+    r.style.setProperty('--title-color', '#2B283A');
+    r.style.setProperty('--title-green', '#10B981');
+    r.style.setProperty('--subtitle-grey', '#6B7280');
+    r.style.setProperty('--btn-green', '#10B981');
+    r.style.setProperty('--hr-color', '#D5D4D8');
+    r.style.setProperty('--password-green', '#5DEF92');
+  }
+}

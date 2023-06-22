@@ -6,25 +6,28 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=Inter:wght@400;500;800&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main id="container" class="bbox black-border">
+    <main id="container" class="bbox">
+      <button id="toggle" onclick="toggleColors()">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
       <header>
         <h1 id="title" class="no-margin">Generate a <span>random password</span></h1>
-        <h2 id="subtitle" class="no-margin">Never use an insecure password again</h2>
+        <h2 id="subtitle" class="no-margin">Never use an insecure password again.</h2>
       </header>
       <section>
         <button id="btn" onclick="generatePasswords()">Generate passwords</button>
         <hr class="bbox">
-        <div id="password-fields" class="black-border">
-          <div class="password-field bbox black-border">
-            <p class="password no-margin"></p>
-            <i class="fa-regular fa-copy"></i>
+        <div id="password-fields">
+          <div class="password-field bbox">
+            <p class="password no-margin no-padding"></p>
+            <i class="fa-regular fa-copy" onclick="copyPassWord(this.previousElementSibling)"></i>
           </div>
-          <div class="password-field bbox black-border">
-            <p class="password no-margin no-padding black-border"></p>
-            <i class="fa-regular fa-copy"></i>
+          <div class="password-field bbox">
+            <p class="password no-margin no-padding"></p>
+            <i class="fa-regular fa-copy" onclick="copyPassWord(this.previousElementSibling)"></i>
           </div>
         </div>
       </section>
