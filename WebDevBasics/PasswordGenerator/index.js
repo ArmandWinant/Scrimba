@@ -19,7 +19,6 @@ function newPassword(n) {
 
 function generatePasswords() {
   let passwordEls = document.getElementsByClassName('password')
-  console.log(passwordEls.length)
 
   for (let i = 0, n = passwordEls.length; i < n; i++) {
     passwordEls[i].textContent = newPassword(15);
