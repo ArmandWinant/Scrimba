@@ -51,9 +51,12 @@ hr {
 }
 
 #password-fields {
+  width: 100%;
   display: grid;
-  grid-template-rows: 40px;
-  grid-template-columns: repeat(2, minmax(auto, 211px));
+  grid-auto-rows: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(211px, 1fr));
+  gap: 1vw;
+  justify-content: space-between;
 }
 
 .password-field {
