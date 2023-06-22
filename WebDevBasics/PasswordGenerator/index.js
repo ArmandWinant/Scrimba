@@ -29,7 +29,7 @@ function copyPassWord(element) {
   navigator.clipboard.writeText(element.textContent);
 }
 
-let darkMode = true;
+let darkMode = false;
 
 function toggleColors() {
   darkMode = !darkMode;

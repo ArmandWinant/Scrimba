@@ -16,13 +16,13 @@
 }
 
 :root {
-  --bg-color: #1F2937;
-  --title-color: #FFFFFF;
-  --title-green: #4ADF86;
+  --bg-color: #ECFDF5;
+  --title-color: #2B283A;
+  --title-green: #10B981;
   --btn-green: #10B981;
-  --password-green: #55F991;
-  --subtitle-grey: #D5D4D8;
-  --hr-color: #2F3E53;
+  --password-green: #5DEF92;
+  --subtitle-grey: #6B7280;
+  --hr-color: #D5D4D8;
 }
 
 body {
@@ -50,10 +50,12 @@ body {
   top: 20px;
   left: 52px;
 
-  /* border: none; */
+  border: none;
   background: none;
 
   cursor: pointer;
+
+  color: var(--title-color);
 }
 
 header {
@@ -143,8 +145,6 @@ hr {
   font-weight: 400;
 
   color: var(--password-green);
-
-  /* border-right: 1px solid rgba(0,0,0,.4); */
 }
 
 .fa-copy {
